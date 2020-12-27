@@ -12,12 +12,12 @@ script.src = "https://cdn.rawgit.com/chrisveness/crypto/4e93a4d/sha256.js"
 
 const loadform = async () => { 
   const html = await (await fetch('https://yurii-donnikov.github.io/test/resources/signup.html')).text()
-  console.log(html)
     document.body
       .appendChild(document.createElement('main'))
         .innerHTML = html
   const [login, password, avatar, submit, picture] = ['login', 'password', 'avatar', 'submit', 'picture']
     .map((id) => document.getElementById(id))
+  
   login.onchange = function(event) {
     fetch(`http://localhost:3000/users?login=${event.target.value}`)
         .then((response) => response.json())
