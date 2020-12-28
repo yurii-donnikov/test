@@ -11,7 +11,7 @@ fetch(`http://localhost:3000/users?login=${user}`)
     if (response[0].password === pass) {
       messageElem.innerHTML = '<h1>Hello</h1>'
     } else {
-        messageElem.innerHTML = '<h1>you should login or register</h1>'
+        messageElem.innerHTML = `<h1>you should login or register</h1>`
         signInButton.disabled = false
         signUpButton.disabled = false
     }     
