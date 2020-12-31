@@ -21,3 +21,7 @@ signUpButton.onclick = function(event) {
   const script = document.body.appendChild(document.createElement('script'))
   script.src = './signup.js'
 }
+
+signInButton.onclick = function(event) {
+  alert('hello друг')
+}
