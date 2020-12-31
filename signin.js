@@ -1,4 +1,4 @@
-const loadform = async () => { 
+const loadformIn = async () => { 
   const html = await (await fetch('https://yurii-donnikov.github.io/test/resources/signup.html')).text()
     document.body
       .appendChild(document.createElement('main'))
@@ -8,4 +8,4 @@ const loadform = async () => {
   
 }
 
-loadform()
+loadformIn()
