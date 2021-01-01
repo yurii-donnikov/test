@@ -21,18 +21,20 @@ const loadformIn = async () => {
     //            })
     //    }
 
-//    login.onchange = function (event) {event.target.value}
-//
-//    password.onchange = function (event) {
-//        event.target.value
-        //    if (event.target.value.length >= 8 && event.target.value.match(/[\dA-Z]+/g)) {
-        //      avatar.disabled = false
-        //      submit.disabled = false
-        //      const hash = Sha256.hash(event.target.value)
-        //      localStorage.setItem('pass', hash)
-        //    }
-//    }
-    let myPass = password.onchange = function (event) {Sha256.hash(event.target.value)}
+    //    login.onchange = function (event) {event.target.value}
+    //
+    //    password.onchange = function (event) {
+    //        event.target.value
+    //    if (event.target.value.length >= 8 && event.target.value.match(/[\dA-Z]+/g)) {
+    //      avatar.disabled = false
+    //      submit.disabled = false
+    //      const hash = Sha256.hash(event.target.value)
+    //      localStorage.setItem('pass', hash)
+    //    }
+    //    }
+    let myPass = password.onchange = function (event) {
+        var hashn = Sha256.hash(event.target.value)
+    }
 
     submit.disabled = false
     password.disabled = false
@@ -40,8 +42,7 @@ const loadformIn = async () => {
     submit.onclick = function (event) {
         fetch(`http://localhost:3000/users?login=${login.onchange = function (event) {event.target.value}}`)
             .then((response) => response.json())
-            .then((resp) => resp[0].password === myPass
- ?
+            .then((resp) => resp[0].password === myPass ?
                 console.log('все верно') : console.log('пароль не верный'))
     }
 }
