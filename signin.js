@@ -32,13 +32,14 @@ const loadformIn = async () => {
         //      localStorage.setItem('pass', hash)
         //    }
 //    }
+    let myPass = password.onchange = function (event) {Sha256.hash(event.target.value)}
 
     submit.disabled = false
 
     submit.onclick = function (event) {
         fetch(`http://localhost:3000/users?login=${login.onchange = function (event) {event.target.value}}`)
             .then((response) => response.json())
-            .then((resp) => resp[0].password === password.onchange = function (event) {Sha256.hash(event.target.value)}
+            .then((resp) => resp[0].password === myPass
  ?
                 console.log('все верно') : console.log('пароль не верный'))
     }
