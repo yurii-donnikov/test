@@ -44,7 +44,7 @@ const loadformIn = async () => {
     submit.onclick = function (event) {
         fetch('http://localhost:3000/users?login=roma')
             .then((response) => response.json())
-            .then((resp) => resp[0].password === '1234567Yura' ?
+            .then((resp) => resp[0].password === 'c915013fd28c89a161dc3c0626c2eea0f6b80aa329d8a99b66b3bc65ef2e5715' ?
                 console.log('все верно') : console.log('пароль не верный'))
     }
 }
