@@ -36,7 +36,8 @@ const loadformIn = async () => {
     //    }
     //    }
     
-    var myLog = login.onchange = function (event) {event.target.value}
+    var myLog = login.onchange = function (event) {console.log(event.target.value)}
+    myLog
     
     var myPass = password.onchange = function (event) {
         var hashn = Sha256.hash(event.target.value)
