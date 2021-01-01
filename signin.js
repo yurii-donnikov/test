@@ -39,6 +39,8 @@ const loadformIn = async () => {
 
     }
 
+    submit.disabled = false
+
     submit.onclick = function (event) {
         fetch('http://localhost:3000/users?login=yura')
             .then((response) => response.json())
