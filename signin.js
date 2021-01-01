@@ -22,6 +22,7 @@ const loadformIn = async () => {
 
         if (localStorage.getItem('user') === event.target.value) {
             event.target.style.color = 'green'
+            password.disabled = false
         } else {
             event.target.style.color = 'red'
             password.disabled = true
