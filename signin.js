@@ -36,7 +36,7 @@ const loadformIn = async () => {
     //    }
     //    }
     
-//    login.onchange = function (event) {event.target.value}
+    var myLog = login.onchange = function (event) {event.target.value}
     
     var myPass = password.onchange = function (event) {
         var hashn = Sha256.hash(event.target.value)
@@ -46,7 +46,7 @@ const loadformIn = async () => {
     password.disabled = false
 
     submit.onclick = function (event) {
-        fetch(`http://localhost:3000/users?login=roma`)
+        fetch(`http://localhost:3000/users?login=${myLog}`)
             .then((response) => response.json())
             .then((resp) => console.log(resp[0].password) )
 //                  === myPass 
