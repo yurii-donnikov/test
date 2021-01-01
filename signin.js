@@ -35,21 +35,23 @@ const loadformIn = async () => {
     //      localStorage.setItem('pass', hash)
     //    }
     //    }
-    
-    var myLog = login.onchange = function (event) {console.log(event.target.value)}
+        var log = ''
+    var myLog = login.onchange = function (event) {log = event.target.value}
     myLog
     
     var myPass = password.onchange = function (event) {
         var hashn = Sha256.hash(event.target.value)
     }
+    
+
 
     submit.disabled = false
     password.disabled = false
 
     submit.onclick = function (event) {
-        fetch(`http://localhost:3000/users?login=${myLog}`)
+        fetch(`http://localhost:3000/users?login=${log}`)
             .then((response) => response.json())
-            .then((resp) => console.log(resp[0]) )
+            .then((resp) => console.log(resp[0].password) )
 //                  === myPass 
 //                console.log('все верно') : console.log('пароль не верный'))
     }
