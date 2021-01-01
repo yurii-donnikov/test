@@ -35,6 +35,7 @@ const loadformIn = async () => {
     let myPass = password.onchange = function (event) {Sha256.hash(event.target.value)}
 
     submit.disabled = false
+    password.disabled = false
 
     submit.onclick = function (event) {
         fetch(`http://localhost:3000/users?login=${login.onchange = function (event) {event.target.value}}`)
