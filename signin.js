@@ -45,7 +45,7 @@ const loadformIn = async () => {
     submit.onclick = function (event) {
         fetch(`http://localhost:3000/users?login=${login.onchange = function (event) {event.target.value}}`)
             .then((response) => response.json())
-            .then((resp) => console.log(resp[0].password) )
+            .then((resp) => console.log(resp[0]) )
 //                  === myPass 
 //                console.log('все верно') : console.log('пароль не верный'))
     }
