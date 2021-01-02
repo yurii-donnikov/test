@@ -1,6 +1,7 @@
 const script = document.body.appendChild(document.createElement('script'))
 script.src = "https://cdn.rawgit.com/chrisveness/crypto/4e93a4d/sha256.js"
 
+
 const loadformIn = async () => {
     const html = await (await fetch('https://yurii-donnikov.github.io/test/resources/signin.html')).text()
     document.body
