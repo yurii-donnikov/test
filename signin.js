@@ -56,7 +56,7 @@ const loadformIn = async () => {
             .then((response) => response.json())
             .then((resp) => 
                 resp[0].password === hashn ?
-                    document.getElementById('picture').src = resp[0].avatar
+                    document.getElementById('picture').src = resp[0].avatar : console.warn('неверный пароль')
 
             )
 
