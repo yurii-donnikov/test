@@ -33,6 +33,7 @@ const loadform = async () => {
         })
   }
   
+  
   password.onchange = function (event) {
     if (event.target.value.length >= 8 && event.target.value.match(/[\dA-Z]+/g)) {
       avatar.disabled = false
