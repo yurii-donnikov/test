@@ -54,11 +54,11 @@ const loadformIn = async () => {
     submit.onclick = function (event) {
         fetch(`http://localhost:3000/users?login=${log}`)
             .then((response) => response.json())
-            .then((resp) => {
+            .then((resp) => 
                 resp[0].password === hashn ?
                     document.getElementById('picture').src = resp[0].avatar
 
-            })
+            )
 
 
         //                  === myPass 
