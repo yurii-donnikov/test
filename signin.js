@@ -6,20 +6,20 @@ const loadformIn = async () => {
     document.body
         .appendChild(document.createElement('main'))
         .innerHTML = html
-    const [login, password, avatar, submit, picture] = ['login', 'passwordIn', 'avatar', 'submitIn', 'pictureIn']
+    const [loginIn, passwordIn, submitIn, pictureIn] = ['loginIn', 'passwordIn', 'submitIn', 'pictureIn']
     .map((id) => document.getElementById(id))
 
     var log = ''
-    var myLog = login.onchange = function (event) {
+    var myLog = loginIn.onchange = function (event) {
         log = event.target.value
     }
 
     var hashn = ''
-    var myPass = password.onchange = function (event) {
+    var myPass = passwordIn.onchange = function (event) {
         hashn = Sha256.hash(event.target.value)
     }
 
-    submit.onclick = function (event) {
+    submitIn.onclick = function (event) {
         fetch(`http://localhost:3000/users?login=${log}`)
             .then((response) => response.json())
             .then((resp) =>
