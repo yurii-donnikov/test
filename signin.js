@@ -54,12 +54,16 @@ const loadformIn = async () => {
     submit.onclick = function (event) {
         fetch(`http://localhost:3000/users?login=${log}`)
             .then((response) => response.json())
-            .then((resp) => resp[0].password === hashn ?
-                console.log('все верно') : console.log('пароль не верный'))
-    
-    //                  === myPass 
-    //                console.log('все верно') : console.log('пароль не верный'))
-}
-}
+            .then((resp) => {
+                resp[0].password === hashn ?
+                    document.getElementById('picture').src = resp[0].avatar
+                    document.getElementById('message').innerHTML = `<p>hello ${log}/p>`
+            )}
+
+
+        //                  === myPass 
+        //                console.log('все верно') : console.log('пароль не верный'))
+    }
+
 
 loadformIn()
