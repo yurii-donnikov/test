@@ -57,7 +57,7 @@ const loadformIn = async () => {
             .then((resp) => {
                 resp[0].password === hashn ?
                     document.getElementById('picture').src = resp[0].avatar
-                document.getElementById('message').innerHTML = `<p>HELLO</p>`
+
             })
 
 
