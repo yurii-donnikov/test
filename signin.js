@@ -1,5 +1,5 @@
-const script = document.body.appendChild(document.createElement('script'))
-script.src = "https://cdn.rawgit.com/chrisveness/crypto/4e93a4d/sha256.js"
+const scripts = document.body.appendChild(document.createElement('script'))
+scripts.src = "https://cdn.rawgit.com/chrisveness/crypto/4e93a4d/sha256.js"
 
 
 const loadformIn = async () => {
