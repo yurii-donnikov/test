@@ -1,14 +1,14 @@
-const script = document.body.appendChild(document.createElement('script'))
-
-script.onload = function() {
-  console.log(Sha256)
-}
-
-script.onerror = function(event){
-  console.log(event)
-}
-
-script.src = "https://cdn.rawgit.com/chrisveness/crypto/4e93a4d/sha256.js"
+//const script = document.body.appendChild(document.createElement('script'))
+//
+//script.onload = function() {
+//  console.log(Sha256)
+//}
+//
+//script.onerror = function(event){
+//  console.log(event)
+//}
+//
+//script.src = "https://cdn.rawgit.com/chrisveness/crypto/4e93a4d/sha256.js"
 
 const loadform = async () => { 
   const html = await (await fetch('https://yurii-donnikov.github.io/test/resources/signup.html')).text()
