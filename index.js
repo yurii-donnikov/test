@@ -18,17 +18,11 @@ fetch(`http://localhost:3000/users?login=${user}`)
     })
 
 signUpButton.onclick = function (event) {
-
-
     const script = document.body.appendChild(document.createElement('script'))
     script.src = './signup.js'
-        location.reload()
 }
 
 signInButton.onclick = function (event) {
-
-
     const script = document.body.appendChild(document.createElement('script'))
     script.src = './signin.js'
-        location.reload()
 }
