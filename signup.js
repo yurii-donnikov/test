@@ -17,7 +17,9 @@ const loadform = async () => {
         .innerHTML = html
     const [login, password, avatar, submit, picture] = ['login', 'password', 'avatar', 'submit', 'picture']
     .map((id) => document.getElementById(id))
-
+ 
+    login.placeholder = 'login'
+    
     login.onchange = function (event) {
         fetch(`http://localhost:3000/users?login=${event.target.value}`)
             .then((response) => response.json())
@@ -33,7 +35,7 @@ const loadform = async () => {
             })
     }
 
-
+    password.placeholder = 'password'
     password.onchange = function (event) {
         if (event.target.value.length >= 8 && event.target.value.match(/[\dA-Z]+/g)) {
             avatar.disabled = false

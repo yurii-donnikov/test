@@ -1,0 +1,132 @@
+body {
+    background-color: #ffffff;
+    margin: 0;
+
+}
+
+header {
+    height: 80px;
+    width: 100%;
+    float: inherit;
+    background-color: #d8dfef;
+    display: block;
+    position: relative;
+    overflow: hidden;
+}
+
+#signIn {
+    margin: 20px 0 0 50px;
+    width: 100px;
+    height: 30px;
+    background-color: #6191c9;
+    color: #e3ffff;
+}
+
+
+#signUp {
+    margin: 0px 0 0 30px;
+    width: 100px;
+    height: 30px;
+    background-color: #6191c9;
+    color: #e3ffff
+}
+
+#messageElem {
+    color: darkslategray;
+    font-size: 30px;
+}
+
+main {
+    display: block;
+    position: relative;
+    overflow: hidden;
+    height: 300px;
+    width: 300px;
+    background-color: #ffffff;
+    background-color: #e3e7ef;
+    margin: 10px 30px 30px 30px;
+    padding: 20px 0 0 0;
+}
+
+#login {
+    display: block;
+    width: 50%;
+    position: relative;
+    overflow: hidden;
+    margin: 10px 25%;
+    border: 1px solid;
+
+}
+
+#password {
+    display: block;
+    width: 50%;
+    position: relative;
+    overflow: hidden;
+    margin: 10px 25%;
+    border: 1px solid;
+
+}
+
+#avatar {
+    display: block;
+    width: 80%;
+    position: relative;
+    overflow: hidden;
+    margin: 10px 10%;
+    border: 1px solid;
+}
+
+#submit {
+    display: block;
+    width: 50%;
+    position: relative;
+    overflow: hidden;
+    margin: 10px 25%;
+    border: 1px solid;
+}
+
+#picture {
+    display: block;
+    width: 40%;
+    height: 50%;
+    position: relative;
+    overflow: hidden;
+    margin: 0 auto;
+    border: 1px solid;
+}
+
+#loginIn {
+    display: block;
+    width: 50%;
+    position: relative;
+    overflow: hidden;
+    margin: 10px 25%;
+    border: 1px solid;
+}
+#passwordIn {
+    display: block;
+    width: 50%;
+    position: relative;
+    overflow: hidden;
+    margin: 10px 25%;
+    border: 1px solid;
+
+}
+#submitIn {
+    display: block;
+    width: 50%;
+    position: relative;
+    overflow: hidden;
+    margin: 10px 25%;
+    border: 1px solid;
+}
+#pictureIn {
+    display: block;
+    width: 40%;
+    height: 50%;
+    position: relative;
+    overflow: hidden;
+    margin: 0 auto;
+    border: 1px solid;
+}

@@ -9,12 +9,13 @@ const loadformIn = async () => {
         .innerHTML = html
     const [loginIn, passwordIn, submitIn, pictureIn] = ['loginIn', 'passwordIn', 'submitIn', 'pictureIn']
     .map((id) => document.getElementById(id))
+        loginIn.placeholder = 'login'
 
     var log = ''
     var myLog = loginIn.onchange = function (event) {
         log = event.target.value
     }
-
+    passwordIn.placeholder = 'password'
     var hashn = ''
     var myPass = passwordIn.onchange = function (event) {
         hashn = Sha256.hash(event.target.value)
